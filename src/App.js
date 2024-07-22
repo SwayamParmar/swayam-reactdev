@@ -1,13 +1,20 @@
-// import logo from './logo.svg';
-// import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import './App.css';
+import Home from "./pages/Home";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="text-center">
-      <header className="bg-blue-200 min-h-screen flex items-center justify-center text-white">
-        <h1 className="text-5xl font-bold">Welcome to my React App with Tailwind CSS!</h1>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header />
+        <Routes>
+          <Route path="/" element={ <Home /> } />
+          {/* Add more routes here */}
+        </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
