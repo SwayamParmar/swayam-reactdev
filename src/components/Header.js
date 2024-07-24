@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import { MdDarkMode } from "react-icons/md";
-import { CiLight } from "react-icons/ci";
+import { FaMoon } from "react-icons/fa";
+import { FiSun } from "react-icons/fi";
 import useMediaQuery from '../mediaQuery/useMediaQuery';
-import "../styles/header.css";
+// import "../styles/header.css";
 import MobileHeader from '../mobileComponents/MobileHeader';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     const [darkMode, setDarkMode] = useState(false);
@@ -21,21 +22,21 @@ const Header = () => {
     const WebHeader = () => {
         return (
             <div className={`text-center ${darkMode ? 'dark' : ''}`}>
-                <header className="bg-white dark:bg-[#030712] w-full p-4 shadow-md">
-                    <div className="w-11/12 mx-auto flex items-center justify-between">
-                        <div className="text-2xl text-black dark:text-white font-bold">
-                            Swayam Parmar
+                <header className="bg-white dark:bg-gray-900 flex items-center justify-between p-4 shadow-md transition-colors duration-300">
+                    <div className="w-11/12 mx-auto flex items-center justify-between transition-colors duration-300">
+                        <div className="transition-colors duration-300">
+                            <NavLink to="/" className="no-underline">
+                                <span className="text-2xl text-gray-900 dark:text-white font-bold">Swayam Parmar</span>
+                            </NavLink>
                         </div>
-                        <nav className="flex items-center space-x-5">
-                            <a href="#about" className="text-black dark:text-white">About</a>
-                            <a href="#work" className="text-black dark:text-white">Work</a>
-                            <a href="#contact" className="text-black dark:text-white">Contact</a>
-                            <button onClick={toggleDarkMode} className="text-black dark:text-white p-2 border-l border-grey dark:border-white">
-                                <span className="material-icons"> {darkMode ? <MdDarkMode /> : <CiLight />}  </span>
+                        <nav className="flex items-center space-x-5 transition-colors duration-300">
+                            <a href="#about" className="text-base font-medium text-gray-600 dark:text-white hover:text-gray-500  hover:dark:text-gray-300 transition-colors duration-300">About</a>
+                            <a href="#work" className="text-base font-medium text-gray-600 dark:text-white hover:text-gray-500  hover:dark:text-gray-300 transition-colors duration-300">Work</a>
+                            <a href="#contact" className="text-base font-medium text-gray-600 dark:text-white hover:text-gray-500  hover:dark:text-gray-300 transition-colors duration-300">Contact</a>
+                            <button onClick={toggleDarkMode} className="text-gray-600 dark:text-white hover:text-gray-500  hover:dark:text-gray-300 p-2 border-l border-grey dark:border-white transition-colors duration-300">
+                                {darkMode ? <FaMoon /> : <FiSun />}
                             </button>
-    
-                            <a href="#download-cv"
-                                className="bg-[#030712] dark:bg-gray-300 text-white dark:text-black px-4 py-2 rounded-xl hover:bg-slate-900 dark:hover:bg-gray-200" >
+                            <a href="#download-cv" className="text-base font-medium bg-gray-900 dark:bg-gray-300 text-white dark:text-black px-4 py-2 rounded-xl hover:bg-slate-700 dark:hover:bg-gray-200 transition-colors duration-300">
                                 Download CV
                             </a>
                         </nav>
@@ -47,13 +48,7 @@ const Header = () => {
 
     return (
         <>
-            {
-                isMobile ? (
-                    <MobileHeader toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
-                ) : (
-                    <WebHeader />
-                )
-            }
+            {isMobile ? <MobileHeader toggleDarkMode={toggleDarkMode} darkMode={darkMode} /> : <WebHeader />}
         </>
     );
 }
