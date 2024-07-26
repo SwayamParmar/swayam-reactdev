@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { FaMoon } from "react-icons/fa";
 import { FiSun } from "react-icons/fi";
 import useMediaQuery from '../mediaQuery/useMediaQuery';
-// import "../styles/header.css";
 import MobileHeader from '../mobileComponents/MobileHeader';
 import { NavLink } from 'react-router-dom';
 
@@ -22,7 +21,7 @@ const Header = () => {
     const WebHeader = () => {
         return (
             <div className={`text-center ${darkMode ? 'dark' : ''}`}>
-                <header className="bg-white dark:bg-gray-900 flex items-center justify-between p-4 shadow-md transition-colors duration-300">
+                <header className="bg-white dark:bg-gray-900 flex items-center justify-between p-4 transition-colors duration-300">
                     <div className="w-11/12 mx-auto flex items-center justify-between transition-colors duration-300">
                         <div className="transition-colors duration-300">
                             <NavLink to="/" className="no-underline">
