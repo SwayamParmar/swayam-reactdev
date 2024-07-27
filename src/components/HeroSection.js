@@ -4,7 +4,7 @@ import { GoDotFill } from "react-icons/go";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import useMediaQuery from '../mediaQuery/useMediaQuery';
-
+import { BsInstagram } from "react-icons/bs";
 
 const HeroSection = () => {
     const isMobile = useMediaQuery(800);
@@ -17,7 +17,7 @@ const HeroSection = () => {
                         <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300">
                             Hi, I'm Swayam Parmar <span role="img" aria-label="wave">👋</span>
                         </h1>
-                        <p className="text-lg sm:text-xl lg:text-base text-gray-700 dark:text-gray-300 mb-6 text-justify transition-colors duration-300">
+                        <p className="text-lg sm:text-xl lg:text-base text-gray-600 dark:text-gray-400 mb-6 text-justify transition-colors duration-300">
                             I'm an aspiring Web Developer seeking an opportunity to apply my passion for web development, 
                             strong problem-solving skills, and knowledge of cutting-edge technologies to contribute to dynamic 
                             and innovative web projects. Eager to learn and grow in a collaborative and fast-paced development environment.
@@ -35,11 +35,14 @@ const HeroSection = () => {
                         </div>
                         
                         <div className="flex space-x-2 pt-4 transition-colors duration-300">
-                            <a href="https://linkedin.com" className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200">
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/SwayamParmar" className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300">
                                 <FaGithub className="h-7 w-9"/>
                             </a>
-                            <a href="https://linkedin.com" className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200">
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/swayam-parmar-988a45214/" className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300">
                                 <FaLinkedin className="h-7 w-9"/>
+                            </a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/swayu_1012/" className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300">
+                                <BsInstagram className="h-7 w-9"/>
                             </a>
                         </div>
                     </div>
