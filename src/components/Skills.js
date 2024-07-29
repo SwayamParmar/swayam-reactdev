@@ -36,14 +36,14 @@ const Skills = () => {
 
     return (
         <section id='about' className='bg-white dark:bg-slate-900 transition-colors duration-300'>
-            <div className="w-11/12 mx-auto px-4 py-8 sm:py-16 lg:pt-20 lg:pb-10 transition-colors duration-300">
+            <div className="w-11/12 mx-auto px-4 py-8 sm:py-16 lg:pt-20 lg:pb-15 transition-colors duration-300">
                 <p className="text-base max-w-max py-1.5 px-6 mx-auto font-medium bg-slate-200 dark:bg-slate-400 text-gray-700 dark:text-gray-200 text-center rounded-full shadow transition-colors duration-300">
                     Skills
                 </p>
-                <p className="text-xl mt-3 py-1.5 px-6 mx-auto font-medium text-gray-700 dark:text-gray-200 text-center transition-colors duration-300">
+                <p className={`${isMobile ? 'text-medium' : 'text-xl'} mt-3 py-1.5 px-6 mx-auto font-medium text-gray-700 dark:text-gray-200 text-center transition-colors duration-300`}>
                     The skills, tools and technologies I am really good at:
                 </p>
-                <div className={`grid ${isMobile ? 'grid-cols-3' : 'grid-cols-7'} ${isMobile ? 'w-full' : 'w-11/12'} mx-auto ${isMobile ? 'gap-8' : 'gap-12'} pt-10 items-center justify-between transition-colors duration-300`}>
+                <div className={`grid ${isMobile ? 'grid-cols-3' : 'grid-cols-7'} w-full mx-auto ${isMobile ? 'gap-8' : 'gap-12'} pt-10 items-center justify-between transition-colors duration-300`}>
                     {skills.map(skill => (
                         <div key={skill.id} className="flex flex-col items-center">
                             <div className="h-20 w-20 flex items-center justify-center p-1">
