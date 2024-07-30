@@ -5,7 +5,7 @@ const AboutMe = () => {
     const isMobile = useMediaQuery(800);
 
     return (
-        <section id='about' className='bg-white dark:bg-slate-700 transition-colors duration-300'>
+        <section id='about' className='bg-[#F9FAFB] dark:bg-slate-700 transition-colors duration-300'>
             <div className="w-11/12 mx-auto px-4 py-8 sm:py-16 lg:pt-20 lg:pb-10 transition-colors duration-300">
                 <p className="text-base max-w-max py-1.5 px-6 mx-auto font-medium bg-slate-200 dark:bg-slate-400 text-gray-700 dark:text-gray-200 text-center rounded-full shadow transition-colors duration-300">
                     About me

@@ -21,7 +21,7 @@ const Header = () => {
     const WebHeader = () => {
         return (
             <div className={`text-center ${darkMode ? 'dark' : ''}`}>
-                <header className="bg-white dark:bg-gray-900 flex items-center justify-between p-4 transition-colors duration-300">
+                <header className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-gray-900 flex items-center justify-between p-4 transition-colors duration-300">
                     <div className="w-11/12 mx-auto flex items-center justify-between transition-colors duration-300">
                         <div className="transition-colors duration-300">
                             <NavLink to="/" className="no-underline">
@@ -29,14 +29,14 @@ const Header = () => {
                             </NavLink>
                         </div>
                         <nav className="flex items-center space-x-4 transition-colors duration-300">
-                            <a href="#about" className="text-base font-medium text-gray-600 dark:text-white hover:text-gray-500  hover:dark:text-gray-300 transition-colors duration-300">About</a>
-                            <a href="#work" className="text-base font-medium text-gray-600 dark:text-white hover:text-gray-500  hover:dark:text-gray-300 transition-colors duration-300">Work</a>
-                            <a href="#contact" className="text-base font-medium text-gray-600 dark:text-white hover:text-gray-500  hover:dark:text-gray-300 transition-colors duration-300">Contact</a>
+                            <a href="#about" className="text-base font-medium text-gray-600 dark:text-white hover:text-gray-500 hover:dark:text-gray-300 transition-colors duration-300">About</a>
+                            <a href="#work" className="text-base font-medium text-gray-600 dark:text-white hover:text-gray-500 hover:dark:text-gray-300 transition-colors duration-300">Work</a>
+                            <a href="#contact" className="text-base font-medium text-gray-600 dark:text-white hover:text-gray-500 hover:dark:text-gray-300 transition-colors duration-300">Contact</a>
                             <span className='text-[23px] text-gray-200 dark:text-white pb-1'>|</span>
-                            <button onClick={toggleDarkMode} className="text-gray-600 dark:text-white hover:text-gray-500  hover:dark:text-gray-300 p-2 transition-colors duration-300">
+                            <button onClick={toggleDarkMode} className="text-gray-600 dark:text-white hover:text-gray-500 hover:dark:text-gray-300 p-2 transition-colors duration-300">
                                 {darkMode ? <FaMoon /> : <FiSun />}
                             </button>
-                                <a href="#download-cv" className="text-base font-medium bg-gray-900 dark:bg-gray-300 text-white dark:text-black px-4 py-2 rounded-xl hover:bg-slate-700 dark:hover:bg-gray-200 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none">
+                            <a href="#download-cv" className="text-base font-medium bg-gray-900 dark:bg-gray-300 text-white dark:text-black px-4 py-2 rounded-xl hover:bg-slate-700 dark:hover:bg-gray-200 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none">
                                 Download CV
                             </a>
                         </nav>

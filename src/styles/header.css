@@ -1,3 +1,13 @@
 .material-icons {
     font-size: 20px;
 }
+.hanging-indent {
+    list-style: none;
+    padding-left: 1.3em;
+    text-indent: -1.3em;
+}
+
+.hanging-indent li::before {
+    content: "• ";
+    padding-right: 0.5em;
+}

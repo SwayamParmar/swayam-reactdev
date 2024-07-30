@@ -17,7 +17,7 @@ const MobileHeader = ({ toggleDarkMode, darkMode }) => {
 
     return (
         <div className={`text-center ${darkMode ? 'dark' : ''}`}>
-            <header className="bg-white dark:bg-gray-900 w-full p-4 shadow-sm flex items-center justify-between transition-colors duration-300">
+            <header className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-gray-900 w-full p-4 shadow-sm flex items-center justify-between transition-colors duration-300">
                 <div className="text-2xl text-black dark:text-white font-bold transition-colors duration-300">
                     <NavLink to="/" className="no-underline">
                         <span className={`${isNavOpen ? 'opacity-15 visible' : 'opacity-100 visible'} text-xl text-gray-900 dark:text-white`}>Swayam Parmar</span>
