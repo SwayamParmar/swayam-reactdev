@@ -36,7 +36,7 @@ const Header = () => {
                             <button onClick={toggleDarkMode} className="text-gray-600 dark:text-white hover:text-gray-500 hover:dark:text-gray-300 p-2 transition-colors duration-300">
                                 {darkMode ? <FaMoon /> : <FiSun />}
                             </button>
-                            <a href="#download-cv" className="text-base font-medium bg-gray-900 dark:bg-gray-300 text-white dark:text-black px-4 py-2 rounded-xl hover:bg-slate-700 dark:hover:bg-gray-200 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none">
+                            <a href="#download-cv" className="text-base font-medium bg-gray-900 dark:bg-gray-300 text-white dark:text-black px-4 py-2 rounded-xl hover:bg-slate-700 dark:hover:bg-gray-200 transition">
                                 Download CV
                             </a>
                         </nav>
