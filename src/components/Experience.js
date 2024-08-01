@@ -64,14 +64,14 @@ const Experience = () => {
                     experienceData.map((experience, index) => (
                         <div key={index} className={`bg-white dark:bg-slate-700 my-8 sm:my-8 lg:my-10 ${isMobile ? 'w-full' : 'w-8/12'} mx-auto rounded-lg shadow p-5`}>
                             <div className={`flex ${isMobile ? 'flex-col' : 'flex'} lg:flex-row items-start justify-between lg:space-x-6 transition-colors duration-300`}>
-                                <div className={`${isMobile ? 'my-2 w-full' : 'w-4/12'} order-1`}>
+                                <div className={`${isMobile ? 'my-2 w-full' : 'w-3/12'} order-1`}>
                                 <img
                                     src={experience.image}
                                     alt={experience.company}
-                                    className='w-48 h-20'
+                                    className='w-32 h-20'
                                 />
                                 </div>
-                                <div className={`${isMobile ? 'order-3 w-full my-2' : 'order-2 w-5/12'}`}>
+                                <div className={`${isMobile ? 'order-3 w-full my-2' : 'order-2 w-6/12'}`}>
                                     <span className='text-lg font-semibold text-gray-900 dark:text-gray-200 transition-colors duration-300'>
                                         { experience.role }
                                     </span>
@@ -83,12 +83,12 @@ const Experience = () => {
                                         }
                                     </ul>
                                 </div>
-                                <div className={` ${isMobile ? 'order-2 w-full my-2' : 'order-3 w-4/12'}`}>
+                                <div className={` ${isMobile ? 'order-2 w-full my-2' : 'order-3 w-3/12'}`}>
                                     <span className='text-medium font-medium text-gray-700 dark:text-gray-200 transition-colors duration-300'>
                                         {experience.duration} <br />
                                         {experience.type && <>{experience.type}</>}
                                     </span>
-                                    <NavLink to={experience.link} className='text-xl font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors duration-300'>
+                                    <NavLink to={experience.link} target="_blank" rel="noopener noreferrer" className='text-xl font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors duration-300'>
                                         <LuExternalLink className='mt-2'/>
                                     </NavLink>
                                 </div>
