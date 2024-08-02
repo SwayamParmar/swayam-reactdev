@@ -7,7 +7,7 @@ const Projects = () => {
     const isMobile = useMediaQuery(868);
 
     return (
-        <section id='about' className='bg-white dark:bg-slate-900 transition-colors duration-300'>
+        <section id='projects' className='bg-white dark:bg-slate-900 transition-colors duration-300'>
             <div className="w-11/12 mx-auto px-4 py-8 sm:py-16 lg:pt-20 lg:pb-10 transition-colors duration-300">
                 <p className="text-base max-w-max py-1.5 px-6 mx-auto font-medium bg-slate-200 dark:bg-slate-400 text-gray-700 dark:text-gray-200 text-center rounded-full shadow transition-colors duration-300">
                     Work
@@ -37,7 +37,7 @@ const Projects = () => {
 
                             <div className='flex flex-wrap gap-2'>
                                 {['React Js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'].map((tech, index) => (
-                                    <span key={index} className='mb-2 text-base py-1.5 px-4 bg-slate-200 dark:bg-slate-400 text-gray-600 dark:text-gray-200 font-medium rounded-full shadow transition-colors duration-300'>
+                                    <span key={index} className='mb-2 text-base py-1.5 px-4 bg-slate-200 dark:bg-slate-400 text-gray-600 dark:text-gray-700 font-medium rounded-full shadow transition-colors duration-300'>
                                         {tech}
                                     </span>
                                 ))}
