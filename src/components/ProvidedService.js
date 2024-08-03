@@ -1,5 +1,5 @@
 import React from 'react';
-import useMediaQuery from '../mediaQuery/useMediaQuery';
+// import useMediaQuery from '../mediaQuery/useMediaQuery';
 
 const services = [
     {
@@ -20,10 +20,10 @@ const services = [
 ];
 
 const ProvidedService = () => {
-    const isMobile = useMediaQuery(800);
+    // const isMobile = useMediaQuery(800);
 
     return (
-        <section id='services' className='bg-white dark:bg-slate-800 transition-colors duration-300'>
+        <section id='services' className='bg-[#F9FAFB] dark:bg-slate-800 transition-colors duration-300'>
             <div className="w-11/12 mx-auto px-4 py-8 sm:py-16 lg:py-20 transition-colors duration-300">
                 <p className="text-base max-w-max py-1.5 px-6 mx-auto font-medium bg-slate-200 dark:bg-slate-400 text-gray-700 dark:text-white text-center rounded-full shadow transition-colors duration-300">
                     Services Provided
