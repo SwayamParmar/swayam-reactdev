@@ -30,7 +30,7 @@ const Header = () => {
                         </div>
                         <nav className="flex items-center space-x-4 transition-colors duration-300">
                             <a href="#about" className="text-base font-medium text-gray-600 dark:text-white hover:text-gray-500 hover:dark:text-gray-300 transition-colors duration-300">About</a>
-                            <a href="#work" className="text-base font-medium text-gray-600 dark:text-white hover:text-gray-500 hover:dark:text-gray-300 transition-colors duration-300">Work</a>
+                            <a href="#services" className="text-base font-medium text-gray-600 dark:text-white hover:text-gray-500 hover:dark:text-gray-300 transition-colors duration-300">Services</a>
                             <a href="#contact" className="text-base font-medium text-gray-600 dark:text-white hover:text-gray-500 hover:dark:text-gray-300 transition-colors duration-300">Contact</a>
                             <span className='text-[23px] text-gray-200 dark:text-white pb-1'>|</span>
                             <button onClick={toggleDarkMode} className="text-gray-600 dark:text-white hover:text-gray-500 hover:dark:text-gray-300 p-2 transition-colors duration-300">

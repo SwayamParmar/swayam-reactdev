@@ -17,7 +17,7 @@ const MobileHeader = ({ toggleDarkMode, darkMode }) => {
 
     return (
         <div className={`text-center ${darkMode ? 'dark' : ''}`}>
-            <header className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-gray-900 w-full p-4 shadow-sm flex items-center justify-between transition-colors duration-300">
+            <header className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-gray-900 p-4 shadow-sm flex items-center justify-between transition-colors duration-300">
                 <div className="text-2xl text-black dark:text-white font-bold transition-colors duration-300">
                     <NavLink to="/" className="no-underline">
                         <span className={`${isNavOpen ? 'opacity-15 visible' : 'opacity-100 visible'} text-xl text-gray-900 dark:text-white`}>Swayam Parmar</span>
@@ -38,7 +38,7 @@ const MobileHeader = ({ toggleDarkMode, darkMode }) => {
                 <div className="p-4 space-y-2">
                     <a onClick={closeToggleNav} href="#about" className="text-base font-medium py-1 text-left block text-gray-600 dark:text-white transition-colors duration-300">About</a>
                     <a onClick={closeToggleNav} href="#work" className="text-base font-medium text-left py-1 block text-gray-600 dark:text-white transition-colors duration-300">Work</a>
-                    <a onClick={closeToggleNav} href="#testimonials" className="text-base font-medium text-left py-1 block text-gray-600 dark:text-white transition-colors duration-300">Testimonials</a>
+                    <a onClick={closeToggleNav} href="#services" className="text-base font-medium text-left py-1 block text-gray-600 dark:text-white transition-colors duration-300">Services</a>
                     <a onClick={closeToggleNav} href="#contact" className="text-base font-medium text-left py-1 block text-gray-600 dark:text-white transition-colors duration-300">Contact</a>
                     <button onClick={toggleDarkMode} className="text-base font-medium text-gray-600 dark:text-white p-1 py-4 border-t border-gray-300 w-full text-left flex items-center justify-between transition-colors duration-300">
                         Switch Theme {darkMode ? <MdDarkMode className="text-2xl" onClick={closeToggleNav} /> : <CiLight className="text-2xl" onClick={closeToggleNav} />}

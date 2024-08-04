@@ -16,11 +16,11 @@ import { FaLaravel } from "react-icons/fa";
 
 const skills = [
     { id: 1, name: 'CSS3', icon: <IoLogoCss3 />, color: 'text-blue-500 dark:text-blue-400' },
-    { id: 2, name: 'React', icon: <FaReact />, color: 'text-teal-500 dark:text-teal-400' },
-    { id: 3, name: 'Bootstrap 5', icon: <BsBootstrapFill />, color: 'text-[#2b1240] dark:text-[#2b1240]' },
-    { id: 4, name: 'Tailwind CSS', icon: <RiTailwindCssFill />, color: 'text-[#44a8b3] dark:text-[#44a8b3]' },
-    { id: 5, name: 'JavaScript', icon: <SiJavascript />, color: 'text-[#ffd600] dark:text-[#ffd600]' },
-    { id: 6, name: 'jQuery', icon: <SiJquery />, color: 'text-[#0868ac] dark:text-[#0868ac]' },
+    { id: 2, name: 'Bootstrap 5', icon: <BsBootstrapFill />, color: 'text-[#2b1240] dark:text-[#2b1240]' },
+    { id: 3, name: 'Tailwind CSS', icon: <RiTailwindCssFill />, color: 'text-[#44a8b3] dark:text-[#44a8b3]' },
+    { id: 4, name: 'JavaScript', icon: <SiJavascript />, color: 'text-[#ffd600] dark:text-[#ffd600]' },
+    { id: 5, name: 'jQuery', icon: <SiJquery />, color: 'text-[#0868ac] dark:text-[#0868ac]' },
+    { id: 6, name: 'React', icon: <FaReact />, color: 'text-teal-500 dark:text-teal-400' },
     { id: 7, name: 'Node', icon: <FaNodeJs />, color: 'text-[#8cc84b] dark:text-[#8cc84b]' },
     { id: 8, name: 'Git', icon: <FaGitAlt />, color: 'text-[#F4511E] dark:text-[#F4511E]' },
     { id: 9, name: 'MYSQL', icon: <GrMysql />, color: 'text-[#00678c] dark:text-[#00678c]' },
@@ -36,7 +36,7 @@ const Skills = () => {
 
     return (
         <section id='about' className='bg-white dark:bg-slate-900 transition-colors duration-300'>
-            <div className="w-11/12 mx-auto px-4 py-8 sm:py-16 lg:pt-20 lg:pb-15 transition-colors duration-300">
+            <div className={`${isMobile ? 'w-full py-16' : 'w-11/12 py-8'} mx-auto px-4 sm:py-16 lg:pt-20 lg:pb-15 transition-colors duration-300`}>
                 <p className="text-base max-w-max py-1.5 px-6 mx-auto font-medium bg-slate-200 dark:bg-slate-400 text-gray-700 dark:text-gray-200 text-center rounded-full shadow transition-colors duration-300">
                     Skills
                 </p>

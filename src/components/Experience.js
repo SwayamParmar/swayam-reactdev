@@ -53,16 +53,16 @@ const Experience = () => {
 
     return (
         <section id='experience' className='bg-[#F9FAFB] dark:bg-slate-800 transition-colors duration-300'>
-            <div className="w-11/12 mx-auto py-8 sm:py-16 lg:pt-20 lg:pb-15 transition-colors duration-300">
+            <div className={`${isMobile ? 'w-full pt-16 pb-10' : 'w-11/12 py-8'} mx-auto sm:py-16 lg:pt-20 lg:pb-15 transition-colors duration-300`}>
                 <p className="text-base max-w-max py-1.5 px-6 mx-auto font-medium bg-slate-200 dark:bg-slate-400 text-gray-700 dark:text-gray-200 text-center rounded-full shadow transition-colors duration-300">
                     Experience
                 </p>
-                <p className="text-xl mt-3 py-2 px-6 mx-auto font-medium text-gray-700 dark:text-gray-200 text-center transition-colors duration-300">
+                <p className={`${isMobile ? 'text-medium' : 'text-xl'} mt-3 py-2 px-6 mx-auto font-medium text-gray-700 dark:text-gray-200 text-center transition-colors duration-300`}>
                     Here is a quick summary of my most recent experiences:
                 </p>
                 {
                     experienceData.map((experience, index) => (
-                        <div key={index} className={`bg-white dark:bg-slate-700 my-8 sm:my-8 lg:my-10 ${isMobile ? 'w-full' : 'w-8/12'} mx-auto rounded-lg shadow p-5`}>
+                        <div key={index} className={`bg-white dark:bg-slate-700 my-8 sm:my-8 lg:my-10 ${isMobile ? 'w-11/12' : 'w-8/12'} mx-auto rounded-lg shadow p-5`}>
                             <div className={`flex ${isMobile ? 'flex-col' : 'flex'} lg:flex-row items-start justify-between lg:space-x-6 transition-colors duration-300`}>
                                 <div className={`${isMobile ? 'my-2 w-full' : 'w-3/12'} order-1`}>
                                 <img

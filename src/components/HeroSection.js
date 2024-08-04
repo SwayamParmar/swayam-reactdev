@@ -11,7 +11,7 @@ const HeroSection = () => {
 
     return (
         <section className='bg-white dark:bg-gray-900 transition-colors duration-300'>
-            <div className="bg-white dark:bg-gray-900 w-11/12 mx-auto px-4 mt-10 py-8 sm:py-16 lg:py-24 transition-colors duration-300">
+            <div className={`bg-white dark:bg-gray-900 ${isMobile ? 'w-full py-16' : 'w-11/12 py-8'} mx-auto px-4 mt-10 sm:py-16 lg:py-24 transition-colors duration-300`}>
                 <div className={`flex ${isMobile ? 'flex-col-reverse' : 'flex'} lg:flex-row items-center justify-between lg:space-x-8 transition-colors duration-300`}>
                     <div className="w-full sm:w-1/1 mt-8 lg:mt-0 transition-colors duration-300">
                         <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300">

@@ -5,8 +5,8 @@ const AboutMe = () => {
     const isMobile = useMediaQuery(800);
 
     return (
-        <section id='about' className='bg-[#F9FAFB] dark:bg-slate-700 transition-colors duration-300'>
-            <div className="w-11/12 mx-auto px-4 py-8 sm:py-16 lg:pt-20 lg:pb-10 transition-colors duration-300">
+        <section id='about' className='bg-[#F9FAFB] dark:bg-slate-800 transition-colors duration-300'>
+            <div className={`${isMobile ? 'w-full py-16' : 'w-11/12 py-8'} mx-auto px-4 sm:py-16 lg:pt-20 lg:pb-10 transition-colors duration-300`}>
                 <p className="text-base max-w-max py-1.5 px-6 mx-auto font-medium bg-slate-200 dark:bg-slate-400 text-gray-700 dark:text-gray-200 text-center rounded-full shadow transition-colors duration-300">
                     About me
                 </p>
@@ -17,7 +17,7 @@ const AboutMe = () => {
                         </div>
                     </div>
 
-                    <div className={`w-full mt-8 lg:mt-0 transition-colors duration-300 text-gray-900 dark:text-white ${isMobile ? 'text-justify' : ''}`}>
+                    <div className={`w-full mt-8 lg:mt-0 transition-colors duration-300 text-gray-900 dark:text-white`}>
                         <h2 className="text-gray-700 dark:text-gray-300 text-3xl font-bold mb-4">Curious about me? Here you have it:</h2>
                         <p className="text-gray-700 dark:text-gray-300 mb-4">
                             I began my career in 2023 as a  <span className='text-xl text-gray-700 dark:text-gray-200 font-semibold'>Full Stack Developer</span> , and since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, with a year of experience under my belt, I'm building web applications using modern technologies such as Node.js, React, Express, Laravel, TailwindCSS, Bootstrap and much more.
