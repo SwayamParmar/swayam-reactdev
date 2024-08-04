@@ -5,17 +5,17 @@ const services = [
     {
         image: "../logo192.png",
         title: "Front End Development",
-        description: "Creating visually appealing and user-friendly interfaces with a focus on performance and accessibility."
+        description: "Creating visually appealing and user-friendly interfaces using technologies like CSS, Bootstrap, TailwindCSS, and React."
     },
     {
         image: "../logo192.png",
         title: "Backend Development",
-        description: "Building robust and scalable server-side applications to power your website or application."
+        description: "Building robust and scalable server-side applications with technologies such as Node, Express, React, Laravel, and MongoDB."
     },
     {
         image: "../logo192.png",
         title: "UI/UX Design",
-        description: "Designing intuitive and engaging user experiences with a focus on user-centric design principles."
+        description: "Designing intuitive and engaging user experiences, focusing on user-centric design principles."
     }
 ];
 
