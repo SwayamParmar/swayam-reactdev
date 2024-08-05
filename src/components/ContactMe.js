@@ -36,8 +36,8 @@ const ContactMe = () => {
                 <div className="flex flex-col items-center my-6">
                     <div className="flex items-center gap-3 mb-4">
                         <FaRegEnvelope className={`${isMobile ? 'text-xl' : 'text-4xl' } text-gray-900 dark:text-gray-200 mt-1 transition-colors duration-300`} />
-                        <span className={`${isMobile ? 'text-xl' : 'text-4xl' } font-semibold text-gray-900 dark:text-gray-200 transition-colors duration-300`}>swayamparmar1012@gail.com</span>
-                        <button onClick={() => handleCopy('swayamparmar1012@gail.com', 'email')} className="ml-2 text-gray-700 dark:text-gray-200">
+                        <span className={`${isMobile ? 'text-xl' : 'text-4xl' } font-semibold text-gray-900 dark:text-gray-200 transition-colors duration-300`}>swayamparmar1012@gmail.com</span>
+                        <button onClick={() => handleCopy('swayamparmar1012@gmail.com', 'email')} className="ml-2 text-gray-700 dark:text-gray-200">
                             {
                                 emailCopied ? <FaCheck className={`${isMobile ? 'text-xl' : 'text-4xl' } text-gray-900 dark:text-gray-200 mt-1 transition-colors duration-300`} /> : 
                                     <LuCopy className={`${isMobile ? 'text-xl' : 'text-4xl' } text-gray-900 dark:text-gray-200 mt-1 transition-colors duration-300`} />

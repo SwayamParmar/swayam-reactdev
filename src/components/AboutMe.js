@@ -11,9 +11,11 @@ const AboutMe = () => {
                     About me
                 </p>
                 <div className={`flex ${isMobile ? 'flex-col' : 'flex-row'} pt-10 ${isMobile ? 'items-center' : 'items-start'} justify-between transition-colors duration-300`}>
-                    <div className="w-full flex justify-center lg:justify-start">
-                        <div className="relative pt-3">
-                            <img src="../images/swayam.jpg" alt="Sagar" className="w-82 h-80 sm:w-82 sm:h-80 lg:w-250 lg:h-250 shadow-lg border-4 border-white dark:border-gray-700" />
+                    <div className={`${isMobile ? 'w-11/12 ml-0' : 'w-full ml-8'} flex justify-start lg:justify-start`}>
+                        <div className="relative pt-3 flex justify-center">
+                            <img src="../images/swayam.jpg" alt="Swayam Parmar" className="relative w-82 h-80 sm:w-82 sm:h-80 border-8 border-white dark:border-gray-800 z-10" />
+                            <div className={`absolute bg-[#E5E7EB] dark:bg-slate-700 ${isMobile ? 'w-full h-72 sm:w-82 sm:h-72 top-14' : 'w-full h-80 sm:w-full sm:h-80 top-10'} rounded-sm shadow`} style={{ left: isMobile ? '-15px' : '-30px', zIndex: 1 }}>
+                            </div>
                         </div>
                     </div>
 

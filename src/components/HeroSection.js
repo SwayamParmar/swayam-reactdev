@@ -12,7 +12,7 @@ const HeroSection = () => {
     return (
         <section className='bg-white dark:bg-gray-900 transition-colors duration-300'>
             <div className={`bg-white dark:bg-gray-900 ${isMobile ? 'w-full py-16' : 'w-11/12 py-8'} mx-auto px-4 mt-10 sm:py-16 lg:py-24 transition-colors duration-300`}>
-                <div className={`flex ${isMobile ? 'flex-col-reverse' : 'flex'} lg:flex-row items-center justify-between lg:space-x-8 transition-colors duration-300`}>
+                <div className={`flex ${isMobile ? 'flex-col-reverse' : 'flex'} gap-12 lg:flex-row items-center justify-between lg:space-x-8 transition-colors duration-300`}>
                     <div className="w-full sm:w-1/1 mt-8 lg:mt-0 transition-colors duration-300">
                         <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300">
                             Hi, I'm Swayam Parmar <span role="img" aria-label="wave">👋</span>
@@ -47,8 +47,12 @@ const HeroSection = () => {
                         </div>
                     </div>
 
-                    <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
-                        <img src="../images/swayam.jpg" alt="Sagar" className={`w-82 h-80 sm:w-82 sm:h-80 lg:w-250 lg:h-250 shadow-lg`} />
+                    <div className="w-full lg:w-1/2 flex justify-center lg:justify-center">
+                        <div className="relative pt-3">
+                            <img src="../images/swayam.jpg" alt="Swayam Parmar" className="relative w-72 h-72 sm:w-72 sm:h-72 lg:w-250 lg:h-250 border-8 border-white dark:border-gray-900 z-10" />
+                            <div className={`absolute bg-[#E5E7EB] dark:bg-slate-700 ${isMobile ? 'w-full h-64 sm:w-64 sm:h-64 top-14' : 'w-full h-72 sm:w-full sm:h-72 top-10'} rounded-sm shadow`} style={{ right: isMobile ? '-15px' : '-30px', zIndex: 1 }}>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
