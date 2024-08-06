@@ -10,7 +10,7 @@ const services = [
     {
         image: "../images/backend.svg",
         title: "Backend Development",
-        description: "Building robust and scalable s erver-side applications with technologies such as Node, Express, React, Laravel, and MongoDB."
+        description: "Building robust and scalable server-side applications with technologies such as Node, Express, React, Laravel, and MongoDB."
     },
     {
         image: "../images/uidesign.svg",
