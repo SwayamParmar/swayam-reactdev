@@ -3,17 +3,17 @@ import useMediaQuery from '../mediaQuery/useMediaQuery';
 
 const services = [
     {
-        image: "../logo192.png",
+        image: "../images/frontend.svg",
         title: "Front End Development",
         description: "Creating visually appealing and user-friendly interfaces using technologies like CSS, Bootstrap, TailwindCSS, and React."
     },
     {
-        image: "../logo192.png",
+        image: "../images/backend.svg",
         title: "Backend Development",
-        description: "Building robust and scalable server-side applications with technologies such as Node, Express, React, Laravel, and MongoDB."
+        description: "Building robust and scalable s erver-side applications with technologies such as Node, Express, React, Laravel, and MongoDB."
     },
     {
-        image: "../logo192.png",
+        image: "../images/uidesign.svg",
         title: "UI/UX Design",
         description: "Designing intuitive and engaging user experiences, focusing on user-centric design principles."
     }
