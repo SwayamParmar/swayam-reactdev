@@ -11,10 +11,10 @@ const AboutMe = () => {
                     About me
                 </p>
                 <div className={`flex ${isMobile ? 'flex-col' : 'flex-row'} pt-10 ${isMobile ? 'items-center' : 'items-start'} justify-between transition-colors duration-300`}>
-                    <div className={`${isMobile ? 'w-11/12 ml-0' : 'w-full ml-8'} flex justify-start lg:justify-start`}>
+                    <div className={`${isMobile ? 'w-11/12 ml-0' : 'w-full'} flex justify-start lg:justify-center`}>
                         <div className="relative pt-3 flex justify-center">
-                            <img src="../images/swayam.jpg" alt="Swayam Parmar" className="relative w-82 h-80 sm:w-82 sm:h-80 border-8 border-white dark:border-gray-800 z-10" />
-                            <div className={`absolute bg-[#E5E7EB] dark:bg-slate-700 ${isMobile ? 'w-full h-72 sm:w-82 sm:h-72 top-14' : 'w-full h-80 sm:w-full sm:h-80 top-10'} rounded-sm shadow`} style={{ left: isMobile ? '-15px' : '-30px', zIndex: 1 }}>
+                            <img src="../images/2.jpg" alt="Swayam Parmar" className="relative w-full h-80 sm:w-full sm:h-96 border-8 border-white dark:border-gray-800 z-10" />
+                            <div className={`absolute bg-[#E5E7EB] dark:bg-slate-700 ${isMobile ? 'w-64 h-80 sm:w-64 sm:h-80 top-8' : 'w-80 h-80 sm:w-80 sm:h-80 top-28'} rounded-sm shadow`} style={{ left: isMobile ? '-15px' : '-30px', zIndex: 1 }}>
                             </div>
                         </div>
                     </div>
