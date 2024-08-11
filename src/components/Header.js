@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaMoon } from "react-icons/fa";
 import { FiSun } from "react-icons/fi";
 import useMediaQuery from '../mediaQuery/useMediaQuery';
@@ -9,12 +9,28 @@ const Header = () => {
     const [darkMode, setDarkMode] = useState(false);
     const isMobile = useMediaQuery(768);
 
-    const toggleDarkMode = () => {
-        setDarkMode(!darkMode);
-        if (!darkMode) {
+    // Check the theme preference from localStorage when the component mounts
+    useEffect(() => {
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme === 'dark') {
+            setDarkMode(true);
             document.documentElement.classList.add('dark');
         } else {
+            setDarkMode(false);
             document.documentElement.classList.remove('dark');
+        }
+    }, []);
+
+    const toggleDarkMode = () => {
+        const isDarkMode = !darkMode;
+        setDarkMode(isDarkMode);
+
+        if (isDarkMode) {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
         }
     };
 
@@ -36,7 +52,7 @@ const Header = () => {
                             <button onClick={toggleDarkMode} className="text-gray-600 dark:text-white hover:text-gray-500 hover:dark:text-gray-300 p-2 transition-colors duration-300">
                                 {darkMode ? <FaMoon /> : <FiSun />}
                             </button>
-                            <a href="#download-cv" className="text-base font-medium bg-gray-900 dark:bg-gray-300 text-white dark:text-black px-4 py-2 rounded-xl hover:bg-slate-700 dark:hover:bg-gray-200 transition">
+                            <a href="/Swayam_Parmar_Resume.pdf" download className="text-base font-medium bg-gray-900 dark:bg-gray-300 text-white dark:text-black px-4 py-2 rounded-xl hover:bg-slate-700 dark:hover:bg-gray-200 transition">
                                 Download CV
                             </a>
                         </nav>
