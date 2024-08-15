@@ -19,7 +19,7 @@ const Projects = () => {
                     <div className={`flex ${isMobile ? 'flex-col' : 'flex-row'} items-start justify-between rounded-xl transition-colors duration-300`}>
                         <div className={`${isMobile ? 'w-full rounded-t-lg' : 'w-6/12 rounded-tl-lg rounded-bl-lg'} h-full dark:bg-[#374151] p-8`}>
                             <img
-                                src="../images/swayam.jpg"
+                                src="../images/flipkart2.png"
                                 alt="swayam"
                                 className='w-full h-full rounded-lg shadow'
                             />
@@ -36,7 +36,7 @@ const Projects = () => {
                             </p>
 
                             <div className='flex flex-wrap gap-2'>
-                                {['React Js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'].map((tech, index) => (
+                                {['React Js', 'Node.js', 'Express.js', 'MongoDB', 'Axios', 'React Toastify', 'Cors'].map((tech, index) => (
                                     <span key={index} className='mb-2 text-base py-1.5 px-4 bg-slate-200 dark:bg-slate-400 text-gray-600 dark:text-gray-700 font-medium rounded-full shadow transition-colors duration-300'>
                                         {tech}
                                     </span>
