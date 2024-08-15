@@ -30,9 +30,9 @@ const Projects = () => {
                             </span>
 
                             <p className="py-4 text-base font-base text-gray-600 dark:text-gray-300 transition-colors duration-300">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, ad. Quod quis, similique
-                                quisquam obcaecati nulla accusamus doloremque eligendi quibusdam amet natus quasi magni blanditiis
-                                dolore corporis porro nihil dolor!
+                            A e-commerce site, Flipkart Clone offers a variety of products including fashion, footwear, 
+                            electronics, and more. With features like secure login/signup, search capabilities, and user notifications, 
+                            it offers a flawless buying experience that is reminiscent of the original Flipkart platform.
                             </p>
 
                             <div className='flex flex-wrap gap-2'>
