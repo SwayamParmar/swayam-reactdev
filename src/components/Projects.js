@@ -36,7 +36,7 @@ const Projects = () => {
                             </p>
 
                             <div className='flex flex-wrap gap-2'>
-                                {['React Js', 'Node.js', 'Express.js', 'MongoDB', 'Axios', 'React Toastify', 'Cors'].map((tech, index) => (
+                                {['React Js', 'Node.js', 'Express.js', 'MongoDB', 'Axios', 'Cors'].map((tech, index) => (
                                     <span key={index} className='mb-2 text-base py-1.5 px-4 bg-slate-200 dark:bg-slate-400 text-gray-600 dark:text-gray-700 font-medium rounded-full shadow transition-colors duration-300'>
                                         {tech}
                                     </span>
